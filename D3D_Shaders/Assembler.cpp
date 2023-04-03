@@ -1732,10 +1732,10 @@ vector<DWORD> assembleIns(string s) {
 		ins->opcode = 53;
 		ins->_11_23 = 3;
 		ins->length = 0;
-		w.size();
+		DWORD sz = (DWORD)w.size();
 		DWORD length = 2;
 		DWORD offset = 3;
-		while (offset < w.size()) {
+		while (offset < sz) {
 			string s1 = w[offset + 0];
 			s1 = s1.substr(0, s1.find(','));
 			string s2 = w[offset + 1];
