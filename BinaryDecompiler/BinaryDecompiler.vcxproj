@@ -103,7 +103,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(ProjectDir)include;$(VC_IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)x64\$(Configuration)\</IntDir>
+    <IntDir>$(ProjectDir)..\build\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(ProjectDir)include;$(VC_IncludePath)</IncludePath>

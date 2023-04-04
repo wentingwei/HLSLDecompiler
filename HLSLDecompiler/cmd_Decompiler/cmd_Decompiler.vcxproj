@@ -107,7 +107,7 @@
     <IncludePath>$(SolutionDir)crc32c-hw-1.0.5\include;$(SolutionDir)BinaryDecompiler;$(SolutionDir)BinaryDecompiler\include;$(WindowsSdkDir_80)Include\um;$(WindowsSdkDir_80)Include\shared;$(VC_IncludePath)</IncludePath>
     <LibraryPath>$(WindowsSdkDir_80)Lib\win8\um\x64;$(VC_LibraryPath_x64)</LibraryPath>
     <OutDir>$(SolutionDir)\x64\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)\x64\$(Configuration)\</IntDir>
+    <IntDir>$(ProjectDir)..\build\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
